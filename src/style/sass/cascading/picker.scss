@@ -1,0 +1,16 @@
+$namespace: 'xmx';
+
+$default-color: #555;
+$primary-color: #bbf7d0;
+
+.mx-datepicker {
+  width: 100%;
+}
+
+.mx-input-wrapper {
+  input {
+    height: 45px;
+  }
+}
+
+@import 'vue2-datepicker/index.css';

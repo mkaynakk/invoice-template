@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: Nunito;
+    src: url('/src/style/fonts/Nunito-VariableFont_wght.ttf');
+}
+
+html {
+    font-family: 'Nunito', sans-serif;
+
+    * {
+        @apply focus-visible:outline-none;
+    }
+}
+
+.main-section {
+    @apply
+    flex
+    flex-col
+    min-h-screen
+    w-screen
+    bg-white
+    transition-all;
+
+    header, footer {
+        @apply py-4;
+
+        .documentation {
+            @apply
+            block
+            text-2xl
+            font-extrabold;
+        }
+    }
+}
+
+// Package
+@import "@style/css/icons/icofont/icofont.css";
+
+// Helpers
+@import "@style/sass/helpers/index";
+
+// Module
+@import "@style/sass/modules/index";
+
+// Cascading
+@import "@style/sass/cascading/index";

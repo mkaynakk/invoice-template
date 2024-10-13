@@ -1,0 +1,143 @@
+.btn {
+  @apply
+  text-center
+  min-w-[6rem]
+  w-auto
+  py-2
+  px-2
+  rounded-md
+  font-extrabold
+  antialiased
+  tracking-wide
+  text-sm
+  uppercase
+  text-white;
+
+  &.btn-primary {
+    @apply bg-primary hover:bg-primary-700;
+  }
+
+  &.btn-sky {
+    @apply bg-sky-400 hover:bg-sky-500;
+  }
+
+  &.btn-secondary {
+    @apply
+    bg-gray-600
+    hover:bg-gray-700;
+  }
+
+  &.btn-success {
+    @apply bg-green-600 hover:bg-green-700;
+  }
+
+  &.btn-danger {
+    @apply bg-red-600 hover:bg-red-700;
+  }
+
+  &.btn-dark {
+    @apply bg-stone-900 hover:bg-stone-700;
+  }
+
+  &.btn-warning {
+    @apply bg-yellow-400 hover:bg-yellow-300 text-black;
+  }
+
+  &.btn-info {
+    @apply bg-neutral-200 hover:bg-neutral-300 text-black;
+  }
+
+  &.btn-white {
+    @apply bg-white border border-gray-200 hover:bg-gray-300 text-black;
+  }
+
+  &.icon-btn {
+    @apply
+    -ml-px
+    relative
+    text-gray-600
+    inline-flex
+    items-center
+    gap-x-1.5
+    ring-1
+    ring-inset
+    ring-gray-300
+    hover:bg-green-50
+  }
+
+
+  &.btn-animation {
+    @apply
+    border-none
+    text-white
+    capitalize
+    hover:text-black
+    hover:bg-transparent
+    after:left-0
+    after:bottom-0;
+
+    &:hover {
+      box-shadow: none;
+    }
+
+    &::before,
+    &::after {
+      @apply
+      content-['']
+      absolute
+      top-0
+      right-0
+      w-0
+      h-0.5
+      bg-primary-400;
+
+      box-shadow:
+              -1px -1px 5px 0px #fff,
+              7px 7px 20px 0px #0003,
+              4px 4px 5px 0px #0002;
+      transition: 400ms ease all;
+    }
+
+    &::after {
+      right: inherit;
+      top: inherit;
+    }
+
+    &:hover::before,
+    &:hover::after {
+      @apply w-full;
+
+      transition: 400ms ease all;
+    }
+  }
+}
+
+.btn-badge {
+  @apply
+  btn
+  text-center
+  pointer-events-none;
+
+  &.theme-green {
+    @apply bg-green-600;
+  }
+
+  &.theme-sky {
+    @apply bg-sky-600;
+  }
+
+  &.theme-light-green {
+    @apply bg-green-400;
+  }
+}
+
+.btn-config {
+  @apply bg-primary;
+
+  &:hover {
+    i {
+      transition: transform 1s ease 0s;
+      transform: rotate(360deg);
+    }
+  }
+}
