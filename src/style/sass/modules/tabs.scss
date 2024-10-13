@@ -1,6 +1,5 @@
 .horizontal-tab {
-  @apply
-  mb-5
+  @apply mb-5
   flex
   list-none
   flex-row
@@ -16,8 +15,7 @@
     @apply text-center;
 
     .nav-link {
-      @apply
-      motion-reduce:transition-none
+      @apply motion-reduce:transition-none
       cursor-pointer
       border-x-0
       border-t-0

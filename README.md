@@ -1,22 +1,19 @@
 ## PROJE KURULUM ADIMLARI
+
 - Paketlerin yüklenmesi
 
-  - ```npm i```
-
+  - `npm i`
 
 - Local server'ın başlatılması
 
-  - ```npm run serve```
+  - `npm run serve`
 
 ## PROJE İÇERİSİNDE KULLANILANLAR
 
-- State yönetimi için ```Pinia```.
+- State yönetimi için `Pinia`.
 
+- UI tool olarak `Tailwind UI`.
 
-- UI tool olarak ```Tailwind UI```.
-
-
-- Yönlendirme (router) için ```Vue Router```.
-
+- Yönlendirme (router) için `Vue Router`.
 
 - Componentler soyut (base), somut (app) olarak ikiye ayrılarak kullanılmıştır.

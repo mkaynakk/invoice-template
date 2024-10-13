@@ -1,6 +1,5 @@
 .btn {
-  @apply
-  text-center
+  @apply text-center
   min-w-[6rem]
   w-auto
   py-2
@@ -22,8 +21,7 @@
   }
 
   &.btn-secondary {
-    @apply
-    bg-gray-600
+    @apply bg-gray-600
     hover:bg-gray-700;
   }
 
@@ -52,8 +50,7 @@
   }
 
   &.icon-btn {
-    @apply
-    -ml-px
+    @apply -ml-px
     relative
     text-gray-600
     inline-flex
@@ -62,13 +59,11 @@
     ring-1
     ring-inset
     ring-gray-300
-    hover:bg-green-50
+    hover:bg-green-50;
   }
 
-
   &.btn-animation {
-    @apply
-    border-none
+    @apply border-none
     text-white
     capitalize
     hover:text-black
@@ -82,8 +77,7 @@
 
     &::before,
     &::after {
-      @apply
-      content-['']
+      @apply content-['']
       absolute
       top-0
       right-0
@@ -91,10 +85,8 @@
       h-0.5
       bg-primary-400;
 
-      box-shadow:
-              -1px -1px 5px 0px #fff,
-              7px 7px 20px 0px #0003,
-              4px 4px 5px 0px #0002;
+      box-shadow: -1px -1px 5px 0px #fff, 7px 7px 20px 0px #0003,
+        4px 4px 5px 0px #0002;
       transition: 400ms ease all;
     }
 
@@ -113,8 +105,7 @@
 }
 
 .btn-badge {
-  @apply
-  btn
+  @apply btn
   text-center
   pointer-events-none;
 

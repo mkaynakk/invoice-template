@@ -27,8 +27,8 @@ export default {
   props: {
     data: {
       required: false,
-      type: Object
-    }
-  }
-}
+      type: Object,
+    },
+  },
+};
 </script>

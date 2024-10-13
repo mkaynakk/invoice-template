@@ -1,7 +1,7 @@
 <template>
   <button type="button" class="btn" v-on="$listeners">
     {{ text }}
-    <slot/>
+    <slot />
   </button>
 </template>
 
@@ -10,12 +10,12 @@ export default {
   props: {
     text: {
       required: false,
-      type: String
+      type: String,
     },
     iconClass: {
       required: false,
-      type: String
-    }
-  }
-}
+      type: String,
+    },
+  },
+};
 </script>

@@ -1,5 +1,6 @@
 .vertical-table {
-  th, td {
+  th,
+  td {
     @apply border-collapse border border-slate-300 text-left p-2;
   }
 }

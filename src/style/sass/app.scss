@@ -3,37 +3,36 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: Nunito;
-    src: url('/src/style/fonts/Nunito-VariableFont_wght.ttf');
+  font-family: Nunito;
+  src: url("/src/style/fonts/Nunito-VariableFont_wght.ttf");
 }
 
 html {
-    font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
 
-    * {
-        @apply focus-visible:outline-none;
-    }
+  * {
+    @apply focus-visible:outline-none;
+  }
 }
 
 .main-section {
-    @apply
-    flex
+  @apply flex
     flex-col
     min-h-screen
     w-screen
     bg-white
     transition-all;
 
-    header, footer {
-        @apply py-4;
+  header,
+  footer {
+    @apply py-4;
 
-        .documentation {
-            @apply
-            block
+    .documentation {
+      @apply block
             text-2xl
             font-extrabold;
-        }
     }
+  }
 }
 
 // Package

@@ -1,12 +1,12 @@
-import invoices from "../../../../static/invoices"
+import invoices from "../../../../static/invoices";
 
 export default {
-    invoiceList: invoices,
-    showReviewModal: false,
-    modalForm: {},
-    selectedInvoice: null,
-    selectedViewInvoice: {},
-    showModal: false,
-    countRow: 0,
-    countComment: 0
-}
+  invoiceList: invoices,
+  showReviewModal: false,
+  modalForm: {},
+  selectedInvoice: null,
+  selectedViewInvoice: {},
+  showModal: false,
+  countRow: 0,
+  countComment: 0,
+};

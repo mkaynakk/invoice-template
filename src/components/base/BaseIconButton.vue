@@ -1,11 +1,7 @@
 <template>
   <button type="button" class="btn" v-on="$listeners">
     <span class="flex items-center gap-x-2 justify-center">
-      <base-icon
-          v-if="!!iconClass"
-          :class="iconClass"
-          aria-hidden="true"
-      />
+      <base-icon v-if="!!iconClass" :class="iconClass" aria-hidden="true" />
 
       <template v-if="text">{{ text }}</template>
     </span>
@@ -13,7 +9,7 @@
 </template>
 
 <script>
-import BaseIcon from "@components/base/BaseIcon.vue"
+import BaseIcon from "@components/base/BaseIcon.vue";
 
 export default {
   name: "BaseIconButton",
@@ -21,13 +17,13 @@ export default {
   props: {
     text: {
       required: false,
-      type: String
+      type: String,
     },
     iconClass: {
       required: false,
       type: String,
-      default: 'text-lg text-green-400'
-    }
-  }
-}
+      default: "text-lg text-green-400",
+    },
+  },
+};
 </script>

@@ -6,18 +6,10 @@
       <li>
         {{ data.address }}
       </li>
-      <li>
-        Tel: {{ data.phone }}
-      </li>
-      <li>
-        E-posta: {{ data.email }}
-      </li>
-      <li>
-        Vergi Dairesi: {{ data.phone }}
-      </li>
-      <li>
-        VKN: {{ data.identityNo }}
-      </li>
+      <li>Tel: {{ data.phone }}</li>
+      <li>E-posta: {{ data.email }}</li>
+      <li>Vergi Dairesi: {{ data.phone }}</li>
+      <li>VKN: {{ data.identityNo }}</li>
     </ul>
   </div>
 </template>
@@ -28,8 +20,8 @@ export default {
   props: {
     data: {
       required: false,
-      type: Object
-    }
-  }
-}
+      type: Object,
+    },
+  },
+};
 </script>

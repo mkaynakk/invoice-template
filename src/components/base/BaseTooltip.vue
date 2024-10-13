@@ -1,10 +1,9 @@
 <template>
-
   <base-icon class="icofont-warning-alt text-red-700" v-title="text" />
 </template>
 
 <script>
-import BaseIcon from "@components/base/BaseIcon.vue"
+import BaseIcon from "@components/base/BaseIcon.vue";
 
 export default {
   name: "BaseTooltip",
@@ -12,8 +11,8 @@ export default {
   props: {
     text: {
       required: true,
-      type: String
-    }
-  }
-}
+      type: String,
+    },
+  },
+};
 </script>

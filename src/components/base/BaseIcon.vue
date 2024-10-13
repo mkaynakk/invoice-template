@@ -1,9 +1,9 @@
 <template>
-    <i class="text-base" v-on="$listeners" />
+  <i class="text-base" v-on="$listeners" />
 </template>
 
 <script>
 export default {
-  name: "BaseIcon"
-}
+  name: "BaseIcon",
+};
 </script>

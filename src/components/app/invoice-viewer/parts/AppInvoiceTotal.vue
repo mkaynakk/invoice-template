@@ -27,6 +27,6 @@
 
 <script>
 export default {
-  name: "AppInvoiceTotal"
-}
+  name: "AppInvoiceTotal",
+};
 </script>

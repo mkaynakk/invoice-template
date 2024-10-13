@@ -5,10 +5,10 @@
 </template>
 
 <script>
-import AppLayout from "./layout/AppLayout.vue"
+import AppLayout from "./layout/AppLayout.vue";
 
 export default {
-  name: 'App',
-  components: { AppLayout }
-}
+  name: "App",
+  components: { AppLayout },
+};
 </script>
